@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+li, a, button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400px;
+        /*how thick the letter char size is*/
+    font-size: 16px;
+    color: tan;
+    text-decoration: none;
+}
+
+/*Nav Bar*/
+    header{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10%;
+        background-color: #ffffff;
+        border: 1px #cccccc;
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    .nav-links li{
+        display: inline-block;
+        padding: 0px 20px;
+        justify-content: flex-start;
+    }
+
+    .nav-links li a{
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav-links li a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+
+    .cta{
+        order: 3;
+        margin-left: auto;
+    }
+
+    button{
+        padding: 9px 25px;
+        background-color: white;
+        border: #003566;
+        color: black;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0;
+    }
+
+    button:hover{
+        background-color: #003566;
+        color: white;
+    }
+
+/*flex box items*/
+    .container{
+        margin: 20px auto;
+        border: 1px solid black;
+        width: 100%;
+        height: 600px;
+        display: block;
+        text-align: center;
+    }
+
+    .card{
+        margin: 20px 20px;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .card > img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .card > img:hover{
+        transform: scale(1.3);
+        transition: all 0.2s ease-in-out;
+            /*"all" = allows all the images to function as so*/
+        opacity: 80%;
+    }
